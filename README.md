@@ -43,3 +43,7 @@
 3. [Week 3](https://github.com/YOURGITHUBUSERNAME/Pre-Placement-Module-2023/tree/main/Weekly%20Submissions/Week%203)
 4. [Week 4](https://github.com/YOURGITHUBUSERNAME/Pre-Placement-Module-2023/tree/main/Weekly%20Submissions/Week%204)
 5. [Week 5](https://github.com/YOURGITHUBUSERNAME/Pre-Placement-Module-2023/tree/main/Weekly%20Submissions/Week%205)
+
+
+PPT and Setup Instructions    
+(https://drive.google.com/drive/folders/1a5UP9b1i9GnkZZHr-2Icd6V9uaNN8qM6?usp=sharing)
