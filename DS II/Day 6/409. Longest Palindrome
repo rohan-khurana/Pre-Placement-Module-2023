@@ -1,0 +1,19 @@
+class Solution:
+    def canConstruct(self, s: str, k: int) -> bool:
+	    s = collections.Counter(s)
+	    two, one = 0, 0
+
+	    for c in s:
+		    #print(c, s[c])
+		    if s[c]%2==0:
+			    two+=s[c]
+		    else:
+			    two+=(s[c]-1)
+			    one+=1
+	    #print(two, one)
+	    if one>k:
+		    return False
+	    elif one==k:
+		    return True
+	    else:
+		    return two>=(k-one)
