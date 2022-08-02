@@ -1,0 +1,27 @@
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        if not matrix:
+            return False 
+        
+        ### [[],[]]
+        if all([i == [] for i in matrix]):
+            return False
+        elif matrix and target is None:
+            return True
+        
+        row, col = 0, len(matrix[0]) - 1 
+        
+        while row < len(matrix) and col >= 0:
+            if matrix[row][0] > target:
+                break 
+                
+            curVal = matrix[row][col]
+            
+            if curVal == target:
+                return True 
+            elif curVal > target:
+                col -= 1 
+            else:
+                row += 1
+        
+        return False 
