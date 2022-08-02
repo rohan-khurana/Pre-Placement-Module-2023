@@ -1,0 +1,30 @@
+class Solution:
+    def addStrings(self, num1: str, num2: str) -> str:
+        carry = 0
+        sum = 0
+        res = []
+        i = len(num1) - 1
+        j = len(num2) - 1
+        while i >= 0 or j >= 0:
+            if j >= 0:
+                a = int(num2[j])
+                
+            else:
+                a = 0
+            if i >= 0:
+                b = int(num1[i])
+                
+            else:
+                b = 0
+            sum = a + b + carry
+            if sum > 9:
+                carry = 1
+            else:
+                carry = 0
+            module = sum % 10
+            res.append(str(module))
+            j -= 1
+            i -= 1
+        if carry == 1:
+            res.append('1')
+        return ''.join(res[::-1])
